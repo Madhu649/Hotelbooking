@@ -3,76 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hotel Booking System</title>
-<link rel="stylesheet" href="/Hotelbooking/style.css">
+<title>Hotel Booking - Home</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!-- Home Page (Login) -->
-<div id="homePage">
+<div class="container">
 <h2>Hotel Booking System</h2>
 <div class="login-section">
 <h3>User Login</h3>
-<input type="text" id="userUsername" placeholder="Username">
-<input type="password" id="userPassword" placeholder="Password">
-<button onclick="login('user')">Login</button>
+<form id="userLoginForm">
+<input type="text" id="userUsername" placeholder="Username" required>
+<input type="password" id="userPassword" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
 </div>
 <div class="login-section">
 <h3>Admin Login</h3>
-<input type="text" id="adminUsername" placeholder="Username">
-<input type="password" id="adminPassword" placeholder="Password">
-<button onclick="login('admin')">Login</button>
+<form id="adminLoginForm">
+<input type="text" id="adminUsername" placeholder="Admin Username" required>
+<input type="password" id="adminPassword" placeholder="Password" required>
+<button type="submit">Login</button>
+</form>
 </div>
 </div>
-<!-- User Dashboard -->
-<div id="userDashboard" style="display: none;">
-<h2>Welcome to User Dashboard</h2>
-<input type="text" id="searchHotel" placeholder="Search Hotel">
-<button id="searchButton" onclick="searchHotels()">Search</button>
-<div id="hotelList"></div>
-<div id="bookingForm" style="display: none;">
-<h3>Book Your Stay</h3>
-<input type="text" id="name" placeholder="Your Name">
-<input type="email" id="email" placeholder="Email">
-<input type="tel" id="phone" placeholder="Phone">
-<input type="date" id="date">
-<input type="number" id="days" placeholder="Number of Days">
-<button id="confirmBooking" onclick="confirmBooking()">Confirm Booking</button>
-</div>
-<p id="bookingMessage" style="display: none;">Booking Successful!</p>
-</div>
-<!-- Admin Dashboard -->
-<div id="adminDashboard" style="display: none;">
-<h2>Admin Dashboard</h2>
-<table>
-<tr>
-<th>User Name</th>
-<th>Hotel Name</th>
-<th>Booking Date</th>
-<th>Number of Days</th>
-<th>Status</th>
-<th>Action</th>
-</tr>
-<tbody id="bookingTable">
-<tr>
-<td>Alice</td>
-<td>Grand Palace</td>
-<td>2025-03-15</td>
-<td>3</td>
-<td id="status1">Confirmed</td>
-<td><button onclick="cancelBooking(1)">Cancel</button></td>
-</tr>
-<tr>
-<td>Bob</td>
-<td>Ocean View</td>
-<td>2025-03-18</td>
-<td>2</td>
-<td id="status2">Confirmed</td>
-<td><button onclick="cancelBooking(2)">Cancel</button></td>
-</tr>
-</tbody>
-</table>
-<p id="cancelMessage" style="display: none;">Booking Cancelled Successfully!</p>
-</div>
-<script src="/Hotelbooking/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

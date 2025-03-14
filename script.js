@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Login Functionality
     document.getElementById("userLoginBtn")?.addEventListener("click", function() {
-        window.location.href = "user.html";
+        window.location.href = "home.html";
     });
     document.getElementById("adminLoginBtn")?.addEventListener("click", function() {
-        window.location.href = "admin.html";
+        window.location.href = "home.html";
     });
     // Hotel Search - Google Style
     const hotels = [
