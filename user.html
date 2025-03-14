@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Dashboard</title>
+<link rel="stylesheet" href="/Hotelbooking/style.csss">
+</head>
+<body>
+<div class="container">
+<h2>User Dashboard</h2>
+<div class="search-section">
+<input type="text" id="searchHotel" placeholder="Search Hotels">
+<button id="searchButton">Search</button>
+</div>
+<div class="hotel-list">
+<div class="hotel">
+<p><strong>Hotel Name:</strong> Ocean View</p>
+<p><strong>Location:</strong> Goa</p>
+<p><strong>Price:</strong> $100 per night</p>
+<button class="book-button" data-hotel-id="1">Book Now</button>
+</div>
+</div>
+<div class="booking-form">
+<h3>Booking Form</h3>
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="email" id="email" placeholder="Your Email" required>
+<input type="text" id="phone" placeholder="Phone Number" required>
+<input type="date" id="date" required>
+<input type="number" id="days" placeholder="Number of Days" required>
+<button id="confirmBooking">Confirm Booking</button>
+</div>
+<div id="bookingMessage" style="display: none;">Booking Successful!</div>
+</div>
+<script src="/Hotelbooking/script.js"></script>
+</body>
+</html>
