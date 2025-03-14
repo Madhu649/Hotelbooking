@@ -1,0 +1,98 @@
+body {
+
+    font-family: Arial, sans-serif;
+
+    margin: 20px;
+
+    padding: 20px;
+
+    text-align: center;
+
+}
+
+h2 {
+
+    color: #333;
+
+}
+
+.login-box {
+
+    display: inline-block;
+
+    margin: 10px;
+
+    padding: 20px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 5px;
+
+}
+
+input, button {
+
+    display: block;
+
+    width: 80%;
+
+    margin: 10px auto;
+
+    padding: 10px;
+
+}
+
+button {
+
+    background-color: #007BFF;
+
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
+button:hover {
+
+    background-color: #0056b3;
+
+}
+
+.hotel-item {
+
+    border: 1px solid #ddd;
+
+    padding: 10px;
+
+    margin: 10px;
+
+    border-radius: 5px;
+
+}
+
+#bookingMessage, #cancelMessage {
+
+    color: green;
+
+    font-weight: bold;
+
+} 
+
+.cancel-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+ }
+ .cancel-btn:hover {
+    background-color: darkred;
+ }
+ .hidden {
+    display: none;
+    color: red;
+    font-weight: bold;
+ }
